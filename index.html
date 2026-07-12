@@ -1,13 +1,10 @@
-Exit code: 0
-Wall time: 15.1 seconds
-Output:
 <!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="鎷惧懗鈥斺€旀牴鎹墜澶撮鏉愭櫤鑳芥惌閰嶅仴搴疯彍璋?>
-  <title>鎷惧懗 路 鍋ュ悍椋熻氨鎼厤</title>
+  <meta name="description" content="拾味——根据手头食材智能搭配健康菜谱">
+  <title>拾味 · 健康食谱搭配</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700;900&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -15,77 +12,76 @@ Output:
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="鎷惧懗棣栭〉"><span class="brand-mark">鎷?/span><span>鎷惧懗</span></a>
-    <nav><a href="#matcher">椋熸潗鎼厤</a><a href="#recipes">鐏垫劅鑿滆氨</a><a href="#about">鍋ュ悍鍘熷垯</a></nav>
-    <button class="saved-btn" id="savedBtn" type="button">鈾?鎴戠殑鏀惰棌 <span id="savedCount">0</span></button>
+    <a class="brand" href="#top" aria-label="拾味首页"><span class="brand-mark">拾</span><span>拾味</span></a>
+    <nav><a href="#matcher">食材搭配</a><a href="#recipes">灵感菜谱</a><a href="#about">健康原则</a></nav>
+    <button class="saved-btn" id="savedBtn" type="button">♡ 我的收藏 <span id="savedCount">0</span></button>
   </header>
 
   <main id="top">
     <section class="hero">
       <div class="hero-content">
         <span class="eyebrow">YOUR PANTRY, YOUR PLATE</span>
-        <h1>浠婂ぉ鍚冧粈涔堬紝<br><em>椋熸潗</em>鏉ュ喅瀹氥€?/h1>
-        <p>閫夊嚭鍐扮閲屽凡鏈夌殑椋熸潗锛屾垜浠负浣犵粍鍚堝嚭钀ュ吇鍧囪　銆侀鍛冲悇寮傜殑涓€椁愩€?/p>
-        <a class="primary-btn" href="#matcher">寮€濮嬫惌閰?<span>鈫?/span></a>
-        <div class="hero-note"><strong>30+</strong><span>绮鹃€夐鏉?/span><i></i><strong>6</strong><span>澶ч鍛宠彍绯?/span><i></i><strong>15 min</strong><span>鏈€蹇笂妗?/span></div>
+        <h1>今天吃什么，<br><em>食材</em>来决定。</h1>
+        <p>选出冰箱里已有的食材，我们为你组合出营养均衡、风味各异的一餐。</p>
+        <a class="primary-btn" href="#matcher">开始搭配 <span>↓</span></a>
+        <div class="hero-note"><strong>30+</strong><span>精选食材</span><i></i><strong>6</strong><span>大风味菜系</span><i></i><strong>15 min</strong><span>最快上桌</span></div>
       </div>
     </section>
 
     <section class="matcher" id="matcher">
       <div class="section-heading">
-        <div><span class="kicker">01 / 閫夋嫨椋熸潗</span><h2>浣犵殑鍐扮閲屾湁浠€涔堬紵</h2></div>
-        <p>鑷冲皯閫夋嫨 2 绉嶏紝閫夊緱瓒婂锛屾帹鑽愯秺绮惧噯銆?/p>
+        <div><span class="kicker">01 / 选择食材</span><h2>你的冰箱里有什么？</h2></div>
+        <p>至少选择 2 种，选得越多，推荐越精准。</p>
       </div>
 
       <div class="pantry-layout">
-        <aside class="category-tabs" id="categoryTabs" aria-label="椋熸潗鍒嗙被"></aside>
+        <aside class="category-tabs" id="categoryTabs" aria-label="食材分类"></aside>
         <div class="ingredient-panel">
           <div class="ingredient-tools">
-            <label class="search"><span>鈱?/span><input id="ingredientSearch" placeholder="鎼滅储椋熸潗鈥? autocomplete="off"></label>
-            <button id="clearBtn" class="text-btn" type="button">娓呯┖閫夋嫨</button>
+            <label class="search"><span>⌕</span><input id="ingredientSearch" placeholder="搜索食材…" autocomplete="off"></label>
+            <button id="clearBtn" class="text-btn" type="button">清空选择</button>
           </div>
           <div class="ingredient-grid" id="ingredientGrid"></div>
         </div>
         <aside class="selection-card">
-          <div class="selection-top"><span>宸查€夐鏉?/span><strong id="selectedCount">0</strong></div>
-          <div id="selectedTags" class="selected-tags"><p class="empty-hint">杩樻病鏈夐€夋嫨椋熸潗</p></div>
+          <div class="selection-top"><span>已选食材</span><strong id="selectedCount">0</strong></div>
+          <div id="selectedTags" class="selected-tags"><p class="empty-hint">还没有选择食材</p></div>
           <div class="nutrition-preview">
-            <span>鏈鎼厤鏂瑰悜</span>
-            <strong id="nutritionHint">鍧囪　 路 娓呯埥 路 楂樼氦</strong>
+            <span>本次搭配方向</span>
+            <strong id="nutritionHint">均衡 · 清爽 · 高纤</strong>
           </div>
-          <button id="matchBtn" class="match-btn" type="button">鐢熸垚鎴戠殑鑿滆氨 <span>鈫?/span></button>
+          <button id="matchBtn" class="match-btn" type="button">生成我的菜谱 <span>→</span></button>
         </aside>
       </div>
     </section>
 
     <section class="recipes-section" id="recipes">
       <div class="section-heading recipes-heading">
-        <div><span class="kicker">02 / 鎺㈢储椋庡懗</span><h2>涓轰綘鎼厤鐨勫仴搴疯彍璋?/h2></div>
-        <p id="resultSummary">鍏堥€夋嫨椋熸潗锛屾垨鐩存帴娴忚浠婃棩鐏垫劅銆?/p>
+        <div><span class="kicker">02 / 探索风味</span><h2>为你搭配的健康菜谱</h2></div>
+        <p id="resultSummary">先选择食材，或直接浏览今日灵感。</p>
       </div>
       <div class="cuisine-filter" id="cuisineFilter"></div>
       <div class="recipe-grid" id="recipeGrid"></div>
     </section>
 
     <section class="philosophy" id="about">
-      <span class="kicker">03 / 鎷惧懗鍘熷垯</span>
-      <h2>鍚冨緱濂斤紝涓嶅繀寰堝鏉傘€?/h2>
+      <span class="kicker">03 / 拾味原则</span>
+      <h2>吃得好，不必很复杂。</h2>
       <div class="principles">
-        <article><span>陆</span><div><h3>涓€鍗婃槸钄彍</h3><p>璁╀赴瀵岄鑹茶嚜鐒跺甫鏉ョ淮鐢熺礌涓庤喅椋熺氦缁淬€?/p></div></article>
-        <article><span>录</span><div><h3>浼樿川铔嬬櫧</h3><p>楸笺€佺銆佽泲銆佽眴绫伙紝鎻愪緵鎸佷箙楗辫吂鎰熴€?/p></div></article>
-        <article><span>录</span><div><h3>鑱槑纰虫按</h3><p>浼樺厛鍏ㄨ胺鐗╀笌钖被锛岀ǔ瀹氶噴鏀捐兘閲忋€?/p></div></article>
+        <article><span>½</span><div><h3>一半是蔬菜</h3><p>让丰富颜色自然带来维生素与膳食纤维。</p></div></article>
+        <article><span>¼</span><div><h3>优质蛋白</h3><p>鱼、禽、蛋、豆类，提供持久饱腹感。</p></div></article>
+        <article><span>¼</span><div><h3>聪明碳水</h3><p>优先全谷物与薯类，稳定释放能量。</p></div></article>
       </div>
     </section>
   </main>
 
-  <footer><div class="brand"><span class="brand-mark">鎷?/span><span>鎷惧懗</span></div><p>濂藉ソ鍚冮キ锛屾槸鐓ч【鑷繁鐨勭涓€姝ャ€?/p><span>漏 2026 SHIWEI</span></footer>
+  <footer><div class="brand"><span class="brand-mark">拾</span><span>拾味</span></div><p>好好吃饭，是照顾自己的第一步。</p><span>© 2026 SHIWEI</span></footer>
 
   <dialog id="recipeModal">
-    <button class="modal-close" id="modalClose" type="button" aria-label="鍏抽棴">脳</button>
+    <button class="modal-close" id="modalClose" type="button" aria-label="关闭">×</button>
     <div id="modalContent"></div>
   </dialog>
   <div class="toast" id="toast" role="status"></div>
   <script src="app.js"></script>
 </body>
 </html>
-
