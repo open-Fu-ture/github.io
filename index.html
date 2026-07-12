@@ -1,0 +1,91 @@
+Exit code: 0
+Wall time: 15.1 seconds
+Output:
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="鎷惧懗鈥斺€旀牴鎹墜澶撮鏉愭櫤鑳芥惌閰嶅仴搴疯彍璋?>
+  <title>鎷惧懗 路 鍋ュ悍椋熻氨鎼厤</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700;900&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="鎷惧懗棣栭〉"><span class="brand-mark">鎷?/span><span>鎷惧懗</span></a>
+    <nav><a href="#matcher">椋熸潗鎼厤</a><a href="#recipes">鐏垫劅鑿滆氨</a><a href="#about">鍋ュ悍鍘熷垯</a></nav>
+    <button class="saved-btn" id="savedBtn" type="button">鈾?鎴戠殑鏀惰棌 <span id="savedCount">0</span></button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">YOUR PANTRY, YOUR PLATE</span>
+        <h1>浠婂ぉ鍚冧粈涔堬紝<br><em>椋熸潗</em>鏉ュ喅瀹氥€?/h1>
+        <p>閫夊嚭鍐扮閲屽凡鏈夌殑椋熸潗锛屾垜浠负浣犵粍鍚堝嚭钀ュ吇鍧囪　銆侀鍛冲悇寮傜殑涓€椁愩€?/p>
+        <a class="primary-btn" href="#matcher">寮€濮嬫惌閰?<span>鈫?/span></a>
+        <div class="hero-note"><strong>30+</strong><span>绮鹃€夐鏉?/span><i></i><strong>6</strong><span>澶ч鍛宠彍绯?/span><i></i><strong>15 min</strong><span>鏈€蹇笂妗?/span></div>
+      </div>
+    </section>
+
+    <section class="matcher" id="matcher">
+      <div class="section-heading">
+        <div><span class="kicker">01 / 閫夋嫨椋熸潗</span><h2>浣犵殑鍐扮閲屾湁浠€涔堬紵</h2></div>
+        <p>鑷冲皯閫夋嫨 2 绉嶏紝閫夊緱瓒婂锛屾帹鑽愯秺绮惧噯銆?/p>
+      </div>
+
+      <div class="pantry-layout">
+        <aside class="category-tabs" id="categoryTabs" aria-label="椋熸潗鍒嗙被"></aside>
+        <div class="ingredient-panel">
+          <div class="ingredient-tools">
+            <label class="search"><span>鈱?/span><input id="ingredientSearch" placeholder="鎼滅储椋熸潗鈥? autocomplete="off"></label>
+            <button id="clearBtn" class="text-btn" type="button">娓呯┖閫夋嫨</button>
+          </div>
+          <div class="ingredient-grid" id="ingredientGrid"></div>
+        </div>
+        <aside class="selection-card">
+          <div class="selection-top"><span>宸查€夐鏉?/span><strong id="selectedCount">0</strong></div>
+          <div id="selectedTags" class="selected-tags"><p class="empty-hint">杩樻病鏈夐€夋嫨椋熸潗</p></div>
+          <div class="nutrition-preview">
+            <span>鏈鎼厤鏂瑰悜</span>
+            <strong id="nutritionHint">鍧囪　 路 娓呯埥 路 楂樼氦</strong>
+          </div>
+          <button id="matchBtn" class="match-btn" type="button">鐢熸垚鎴戠殑鑿滆氨 <span>鈫?/span></button>
+        </aside>
+      </div>
+    </section>
+
+    <section class="recipes-section" id="recipes">
+      <div class="section-heading recipes-heading">
+        <div><span class="kicker">02 / 鎺㈢储椋庡懗</span><h2>涓轰綘鎼厤鐨勫仴搴疯彍璋?/h2></div>
+        <p id="resultSummary">鍏堥€夋嫨椋熸潗锛屾垨鐩存帴娴忚浠婃棩鐏垫劅銆?/p>
+      </div>
+      <div class="cuisine-filter" id="cuisineFilter"></div>
+      <div class="recipe-grid" id="recipeGrid"></div>
+    </section>
+
+    <section class="philosophy" id="about">
+      <span class="kicker">03 / 鎷惧懗鍘熷垯</span>
+      <h2>鍚冨緱濂斤紝涓嶅繀寰堝鏉傘€?/h2>
+      <div class="principles">
+        <article><span>陆</span><div><h3>涓€鍗婃槸钄彍</h3><p>璁╀赴瀵岄鑹茶嚜鐒跺甫鏉ョ淮鐢熺礌涓庤喅椋熺氦缁淬€?/p></div></article>
+        <article><span>录</span><div><h3>浼樿川铔嬬櫧</h3><p>楸笺€佺銆佽泲銆佽眴绫伙紝鎻愪緵鎸佷箙楗辫吂鎰熴€?/p></div></article>
+        <article><span>录</span><div><h3>鑱槑纰虫按</h3><p>浼樺厛鍏ㄨ胺鐗╀笌钖被锛岀ǔ瀹氶噴鏀捐兘閲忋€?/p></div></article>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="brand"><span class="brand-mark">鎷?/span><span>鎷惧懗</span></div><p>濂藉ソ鍚冮キ锛屾槸鐓ч【鑷繁鐨勭涓€姝ャ€?/p><span>漏 2026 SHIWEI</span></footer>
+
+  <dialog id="recipeModal">
+    <button class="modal-close" id="modalClose" type="button" aria-label="鍏抽棴">脳</button>
+    <div id="modalContent"></div>
+  </dialog>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
+
